@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/D-Ghoost/curso-react/static/css/main.f31919e9.css",
+    "main.js": "/D-Ghoost/curso-react/static/js/main.e69c6ef3.js",
+    "index.html": "/D-Ghoost/curso-react/index.html",
+    "static/media/delete.svg": "/D-Ghoost/curso-react/static/media/delete.b01c02c1edbd37278c2804ca207636e6.svg",
+    "static/media/check.svg": "/D-Ghoost/curso-react/static/media/check.69fd5a6da05cf035cc5e8f6fef512ff9.svg",
+    "main.f31919e9.css.map": "/D-Ghoost/curso-react/static/css/main.f31919e9.css.map",
+    "main.e69c6ef3.js.map": "/D-Ghoost/curso-react/static/js/main.e69c6ef3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f31919e9.css",
+    "static/js/main.e69c6ef3.js"
+  ]
+}
