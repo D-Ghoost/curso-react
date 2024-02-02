@@ -82,3 +82,10 @@ Luego en el package.json colocamos los siguientes scripts:
   "deploy": "gh-pages -d build"
 }
 ```
+
+Y ejecutamos el siguiente comando:
+
+```bash
+npm run deploy
+```
+
