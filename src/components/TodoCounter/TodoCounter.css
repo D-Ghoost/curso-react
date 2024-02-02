@@ -1,0 +1,13 @@
+h1 {
+    margin: 0;
+    padding: 3vmax;
+    color: #E2DFDA;
+    font-size: 5vmax;
+    text-align: center;
+}
+
+@media only screen and (width > 425px) {
+    h1{
+        font-size: 3vmax;
+    }
+}

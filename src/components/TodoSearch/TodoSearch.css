@@ -1,0 +1,31 @@
+.TodoSearch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TodoSearch-input{
+    text-align: center;
+    height: 3vmax;
+    width: 50vmax;
+    padding: 10px;
+    background: #E2DFDA;
+    border: 1px solid #7F7C6D;
+    border-radius: 13px;
+}
+
+.TodoSearch-input::placeholder{
+    text-align: center;
+    font-size: medium;
+    font-style: italic;
+}
+
+
+@media only screen and (width > 425px) {
+    .TodoSearch-input{
+        height: 1vmax;
+        padding: 15px;
+        width: 25vmax;
+        font-size: 20px;
+    }
+}
