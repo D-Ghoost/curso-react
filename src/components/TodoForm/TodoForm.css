@@ -3,7 +3,7 @@ form{
     height: 30dvh;
     border-radius: 15px;
     display: flex;
-    background-color: rgb(73, 61, 35);
+    background-color: rgb(27, 27, 27);
     align-items: center;
     flex-direction: column;
 }

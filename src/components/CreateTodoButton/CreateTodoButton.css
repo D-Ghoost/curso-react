@@ -24,28 +24,15 @@
     scale: 1.1;
 }
 
-@media only screen and (width <= 375px) {
+@media only screen and (width <= 425px) {
     .CreateTodoButton {
         bottom: 2%;
         left: 77dvw;
     }
+
 }
 
-@media only screen and ( 375px < width ) {
-    .CreateTodoButton {
-        bottom: 2%;
-        left: 80dvw;
-    }
-}
-
-@media only screen and (768px <= width ){
-    .CreateTodoButton {
-        bottom: 2%;
-        left: 85dvw;
-    }
-}
-
-@media only screen and (width > 768px) {
+@media only screen and (1440px > width >= 1024px){
     .CreateTodoButton {
         width: 150px;
         height: 45px;   
@@ -66,21 +53,49 @@
         font-size: 16px;
     }
 }
-    
-@media only screen and ( 768px < width <= 1440px) {
+
+
+@media only screen and ( width >= 1440px){
+
     .CreateTodoButton {
-        left: 109rem;
+        width: 150px;
+        height: 45px;   
+        border-radius: 15%;
+        left: 88dvw;
+        bottom: 2%;
+    }
+
+    .CreateTodoButton:hover svg{
+        transform: rotate(45deg);
+        transition: transform 0.5s ease;
+    }
+
+    .CreateTodoButton label{
+        display: inline;
+        padding: 0px 5px;
+        font-size: 16px;
     }
 }
 
-@media only screen and (width > 1441px) {
+@media only screen and ( width >= 2560px){
+
     .CreateTodoButton {
-        left: 109rem;
+        width: 150px;
+        height: 45px;   
+        border-radius: 15%;
+        left: 92dvw;
+        bottom: 2%;
+    }
+
+    .CreateTodoButton:hover svg{
+        transform: rotate(45deg);
+        transition: transform 0.5s ease;
+    }
+
+    .CreateTodoButton label{
+        display: inline;
+        padding: 0px 5px;
+        font-size: 16px;
     }
 }
 
-@media only screen and (width >= 2560px) {
-    .CreateTodoButton {
-        left: 178rem;
-    }
-}

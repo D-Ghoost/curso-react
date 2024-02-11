@@ -2,6 +2,7 @@ import React from 'react';
 import { TodoContext } from '../TodoContext';
 import './TodoForm.css';
 
+
 function TodoForm() {
     const {
         setOpenModal,
@@ -9,17 +10,13 @@ function TodoForm() {
     } = React.useContext(TodoContext);
 
     const [newTodoValue, setNewTodoValue] = React.useState('');
-
-    let alertHiden = true;
+    const [ showAlert, setShowAlert ] = React.useState(true);
 
     const onSubmit = (event) => {
         event.preventDefault();
         if (newTodoValue !== '') {
             addTodo( newTodoValue );
             setOpenModal(false);           
-        }else{
-            alertHiden = false;
-            console.log(alertHiden);
         }
     }
 
@@ -29,6 +26,12 @@ function TodoForm() {
 
     const onChange = (ev) => {
         setNewTodoValue(ev.target.value);    
+    }
+
+    const onValidate = (ev) => {
+        if (newTodoValue === '') {
+            setShowAlert(false)
+        }
     }
 
     return (
@@ -41,12 +44,12 @@ function TodoForm() {
                     value={ newTodoValue }
                     onChange={ onChange}
             />
-            <div className={ `TodoForm--alert ${ alertHiden && 'TodoForm--alert-hiden' }` }>
+            <div className={ `TodoForm-alert ${ showAlert && 'TodoForm--alert-hiden' }` }>
                 <p>
-                    Importante: No olvides escribir tu tarea.
+                    La tarea no puede estar vacía
                 </p>
             </div>
-            <div className='TodoForm-buttonContainer'>
+            <div className={ `TodoForm-buttonContainer` }>
                 <button 
                     type='button'
                     className='TodoForm-button TodoForm-button__cancel'
@@ -58,6 +61,7 @@ function TodoForm() {
                 <button 
                     type='submit'
                     className='TodoForm-button TodoForm-button__add'
+                    onClick={ onValidate }
                 >
                     Agregar
                 </button>
