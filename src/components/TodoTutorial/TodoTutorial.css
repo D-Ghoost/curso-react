@@ -49,7 +49,7 @@
         box-shadow: 0 0 10px #41502e;
 }
 
-@media only screen and ( max-width: 425px ) {  
+@media only screen and ( max-width: 426px ) {  
 
     .TodoTutorial{
         width: 90dvw;
@@ -73,7 +73,7 @@
     }
  }
 
- @media only screen and ( max-width: 1024px) and ( min-width: 426px){  
+ @media only screen and ( max-width: 1024px) and ( min-width: 427px){  
 
     .TodoTutorial{
         height: 85dvh;
