@@ -1,0 +1,85 @@
+.DeleteAllTodo{
+    width: 45dvw;
+    height: 20dvh;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(27, 27, 27);
+    border-radius: 15px;
+}
+
+.DeleteAllTodo-buttonContainer{
+    width: 45dvw;
+    height: 7dvh;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.DeleteAllTodo-button{
+    width: 15dvw;
+    height: 4dvh;
+    margin: 15px 13px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+.DeleteAllTodo-button__cancel:hover{
+    color: white;
+    scale: 1.1;
+    background-color: #313e20;
+    box-shadow: 0 0 10px #313e20;
+}
+
+.DeleteAllTodo-button__delete:hover{
+    color:white;
+    scale: 1.1;
+    background-color: #511b06;
+    box-shadow: 0 0 10px #511b06;
+}
+
+.DeleteAllTodo-button__cancel:focus{
+    color: white;
+    scale: 1.1;
+    background-color: #313e20;
+}
+
+.DeleteAllTodo-button__delete:focus{
+    color:white;
+    scale: 1.1;
+    background-color: #511b06;
+}
+
+@media screen and ( max-width: 768px){
+    .DeleteAllTodo{
+        width: 80dvw;
+        height: 30dvh;
+    }
+
+    .DeleteAllTodo-buttonContainer {
+        width: 70dvw;
+    }
+
+    .DeleteAllTodo-button {
+        width: 25dvw;
+        height: 5dvh;
+        margin: 5px 10px;   
+    }
+
+    .DeleteAllTodo-button__cancel:focus{
+        color: white;
+        scale: 0;
+        background-color: #313e20;
+    }
+    
+    .DeleteAllTodo-button__delete:focus{
+        color:white;
+        scale: 0;   
+        background-color: #511b06;
+    }
+}

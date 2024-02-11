@@ -1,0 +1,70 @@
+
+.DeleteAllTodosButton{
+    width: 170px;
+    height: 70px;
+    background-color: #1D283A;
+    color: #CBDDDF;
+    border-radius: 100%;
+    border: rgb(41, 58, 85) 1px solid;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    left: 10dvw;
+    bottom: 2%;
+    transition-duration: 0.5s;
+}
+
+.DeleteAllTodosButton label{
+    display: none;
+}
+
+.DeleteAllTodosButton svg{
+    width: 30px;
+    height: 30px
+}
+
+.DeleteAllTodosButton:hover{
+    background-color: #533428;
+    scale: 1.1;
+}
+
+@media only screen and (width <= 375px) {
+    .DeleteAllTodosButton {
+        bottom: 2%;
+        left: 5dvw;
+    }
+
+    .DeleteAllTodosButton {
+        width: 65px;
+    }
+}
+
+@media only screen and ( 375px < width <= 768px ) {
+    .DeleteAllTodosButton {
+        bottom: 2%;
+        left: 3rem;
+    }
+
+    .DeleteAllTodosButton {
+        width: 65px;
+    }
+}
+
+@media only screen and (width > 768px) {
+    .DeleteAllTodosButton {
+        width: 170px;
+        height: 45px;   
+        border-radius: 15%;
+        left: 2rem;
+        bottom: 2%;
+    }
+
+
+    .DeleteAllTodosButton label{
+        display: inline;
+        padding: 0px 5px;
+        font-size: 15px;
+    }
+}
+
