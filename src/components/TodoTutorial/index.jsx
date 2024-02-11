@@ -23,6 +23,7 @@ function TodoTutorial() {
             <p className="TodoTutorial--parragraph">
                 Si deseas eliminar todas las tareas, puedes hacer clic en el botón "Eliminar To Do's".
             </p>
+            <h2 className="TodoTutorial--subtitle"> Recordar que toda esta información se guarda directamente en el navegador del dispositivo </h2>
             <button 
                 className="TodoTutorial--button"
                 onClick={ () =>  handleClick() }
