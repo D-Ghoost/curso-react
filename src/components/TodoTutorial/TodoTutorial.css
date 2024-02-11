@@ -1,0 +1,46 @@
+.TodoTutorial{
+    width: 70dvw;
+    height: 65dvh;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(73, 61, 35);
+    border-radius: 15px;
+}
+
+.TodoTutorial--title{
+    font-size: 3.5rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.TodoTutorial--parragraph{
+    width:65dvw;
+    font-size: 1.5rem;
+    padding: 0 1.5rem;
+}
+
+.TodoTutorial--button{
+    height: 6dvh;
+    width: 60dvw;
+    margin: 1.5rem 0rem;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    align-self: center;
+    background-color: #313e20;
+}
+
+.TodoTutorial--button:hover{
+        color: white;
+        background-color: #41502e;
+        box-shadow: 0 0 10px #41502e;
+}
+
+@media only screen and (width <= 375px) {  
+    .TodoTutorial--parragraph{
+        font-size: 1.2rem;
+    }
+ }

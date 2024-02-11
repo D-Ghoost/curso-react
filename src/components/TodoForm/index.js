@@ -10,10 +10,17 @@ function TodoForm() {
 
     const [newTodoValue, setNewTodoValue] = React.useState('');
 
+    let alertHiden = true;
+
     const onSubmit = (event) => {
         event.preventDefault();
-        addTodo( newTodoValue );
-        setOpenModal(false);        
+        if (newTodoValue !== '') {
+            addTodo( newTodoValue );
+            setOpenModal(false);           
+        }else{
+            alertHiden = false;
+            console.log(alertHiden);
+        }
     }
 
     const onCancel = () => {
@@ -34,6 +41,11 @@ function TodoForm() {
                     value={ newTodoValue }
                     onChange={ onChange}
             />
+            <div className={ `TodoForm--alert ${ alertHiden && 'TodoForm--alert-hiden' }` }>
+                <p>
+                    Importante: No olvides escribir tu tarea.
+                </p>
+            </div>
             <div className='TodoForm-buttonContainer'>
                 <button 
                     type='button'

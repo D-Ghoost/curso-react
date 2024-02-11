@@ -12,6 +12,9 @@ import { Modal } from '../components/Modal';
 import { TodoForm } from '../components/TodoForm';
 import { DeleteAllTodo } from '../components/DeleteAllTodo';
 import { DeleteAllTodosButton } from '../components/DeleteAllTodosButton';
+import { TodoTutorial } from '../components/TodoTutorial';
+
+
 
 // props anteriormente en AppUI = { loading, error, searchedTodo, totalTodos, completedTodos, searchValue, setSearchValue, completeTodos, deleteTodo }
 function AppUI() {
@@ -23,13 +26,19 @@ function AppUI() {
       completeTodos, 
       deleteTodo,
       openModal,
-      setOpenModal,
       openDeleteModal, 
-      setOpenDeleteModal,
+      showTutorial
     } = React.useContext(TodoContext);
 
     return (
         <>
+        {
+            showTutorial && (
+              <Modal>
+                <TodoTutorial/>
+              </Modal>
+            )
+          }
           <TodoCounter/>
           <TodoSearch/>
 
@@ -70,6 +79,7 @@ function AppUI() {
               </Modal>
             )
           }
+          
         </>
     );
 }

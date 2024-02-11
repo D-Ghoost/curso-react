@@ -31,10 +31,17 @@
     }
 }
 
-@media only screen and ( 375px < width <= 768px ) {
+@media only screen and ( 375px < width ) {
     .CreateTodoButton {
         bottom: 2%;
         left: 80dvw;
+    }
+}
+
+@media only screen and (768px <= width ){
+    .CreateTodoButton {
+        bottom: 2%;
+        left: 85dvw;
     }
 }
 
@@ -43,7 +50,7 @@
         width: 150px;
         height: 45px;   
         border-radius: 15%;
-        left: 83dvw;
+        left: 53rem;
         bottom: 2%;
     }
 
@@ -60,3 +67,20 @@
     }
 }
     
+@media only screen and ( 768px < width <= 1440px) {
+    .CreateTodoButton {
+        left: 109rem;
+    }
+}
+
+@media only screen and (width > 1441px) {
+    .CreateTodoButton {
+        left: 109rem;
+    }
+}
+
+@media only screen and (width >= 2560px) {
+    .CreateTodoButton {
+        left: 178rem;
+    }
+}

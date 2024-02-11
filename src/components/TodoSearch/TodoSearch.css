@@ -6,8 +6,8 @@
 
 .TodoSearch-input{
     text-align: center;
-    height: 3vmax;
-    width: 50vmax;
+    height: 4dvh;
+    width: 90dvw;
     padding: 10px;
     background: #E2DFDA;
     border: 1px solid #7F7C6D;
@@ -21,11 +21,3 @@
 }
 
 
-@media only screen and (width > 425px) {
-    .TodoSearch-input{
-        height: 1vmax;
-        padding: 15px;
-        width: 25vmax;
-        font-size: 20px;
-    }
-}

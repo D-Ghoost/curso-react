@@ -10,7 +10,7 @@ function TodoSearch() {
       <div className="TodoSearch">
         <input 
         className="TodoSearch-input" 
-        placeholder="Ingrese un texto"
+        placeholder="Busca una tarea..."
         value={ searchValue }
         onChange={ (event) => {
           // Aqui se actualiza el estado y se guarda en el estado del componente

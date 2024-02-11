@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
+import { useCheckTutorial } from "../../hooks/useCheckTutorial";
 
 const TodoContext = React.createContext();
 
@@ -12,6 +13,7 @@ function TodoProvier({ children }) {
     const { item: todos, saveItem: saveTodos, error, loading } = useLocalStorage('TODOS_v1',[]);
     const [searchValue, setSearchValue] = React.useState('');
     const [openModal, setOpenModal] = React.useState(false);
+    const [ showTutorial, setShowTutorial ] = React.useState(useCheckTutorial());
     const [ openDeleteModal, setOpenDeleteModal ] = React.useState(false);
 
     // Contador de todos completados
@@ -19,6 +21,8 @@ function TodoProvier({ children }) {
     const totalTodos = todos.length;
     // Filtrar los todos
     const searchedTodo = todos.filter(todo => todo.text.toLowerCase().replace(/[\u0300-\u036f]/g, "").includes(searchValue.toLowerCase()));
+    
+    // Inicio tutorial
     
 
     // Añadir Todo
@@ -50,6 +54,8 @@ function TodoProvier({ children }) {
         saveTodos([]);
     }
 
+    
+
     // Cualquier componente que este dentro de este provider va a tener acceso a la informacion
     return(
         <TodoContext.Provider value={{ 
@@ -66,6 +72,8 @@ function TodoProvier({ children }) {
             setOpenModal,
             openDeleteModal, 
             setOpenDeleteModal,
+            showTutorial,
+            setShowTutorial,
             addTodo,
             removeTodos
         }}>
