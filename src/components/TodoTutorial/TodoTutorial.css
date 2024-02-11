@@ -49,8 +49,42 @@
         box-shadow: 0 0 10px #41502e;
 }
 
-@media only screen and (width <= 375px) {  
+@media only screen and ( max-width: 424px ) {  
+
+    .TodoTutorial{
+        width: 90dvw;
+        height: 96dvh;
+        align-items: center;
+        text-align: center;
+    }
+
+    .TodoTutorial--title{
+        font-size: 1rem   ;
+        padding: 1rem;
+    }
+
     .TodoTutorial--parragraph{
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .TodoTutorial--subtitle{
+        width: 60dvw;
+        font-size: 1rem;
+    }
+ }
+
+ @media only screen and ( max-width: 1024px) and ( min-width: 425px){  
+
+    .TodoTutorial{
+        height: 85dvh;
+    }
+
+    .TodoTutorial--title{
+        font-size: 3rem   ;
+        padding: 1rem;
+    }
+
+    .TodoTutorial--parragraph{
+        font-size: 1rem;
     }
  }
